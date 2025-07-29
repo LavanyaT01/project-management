@@ -1,0 +1,86 @@
+.team-container {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.team-container h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #1f2937;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.team-table th,
+.team-table td {
+    border: 1px solid #e5e7eb;
+    padding: 14px;
+    text-align: left;
+}
+
+.team-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+    color: #374151;
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.team-member-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.team-member-role,
+.team-member-tasks {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        padding: 16px;
+    }
+
+    .team-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .team-table {
+        font-size: 0.95rem;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .team-member-name {
+        font-size: 16px;
+    }
+
+    .team-member-role,
+    .team-member-tasks {
+        font-size: 13px;
+    }
+}
